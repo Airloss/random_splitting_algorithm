@@ -57,6 +57,7 @@ for ldx = 1:length(lambda)
                     break;
                 end
             end
+            % CRPW End
             scs = scs + k;
             lambdaE = (lambdaE * theata + (1-theata) * k) / (theata + (1-theata) * (1+tk));
             mu = max(mu - 1.8842 + lambdaE * (1 + tk), 0.1);
